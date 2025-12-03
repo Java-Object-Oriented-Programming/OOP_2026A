@@ -1,9 +1,10 @@
-package Day01;
+package Week01;
 
 public class Functions_14 {
 
     public static void main(String[] args)
     {
+
         PrintHello();
 
         PrintSum(3, 4);
@@ -13,13 +14,14 @@ public class Functions_14 {
 
         int num = GetSum(2,5);
         System.out.println("Got from GetSum: "+num);
+
     }
 
 
-    //function that does not get parameters and does not return value
+
     static void PrintHello()
     {
-       
+
         System.out.println("Hello");
 
     }
@@ -37,6 +39,11 @@ public class Functions_14 {
         return "Hello";
     }
 
+    /**
+     * @param num1
+     * @param num2
+     * @return
+     */
     //function that gets parameters and does return value
     static int GetSum(int num1, int num2)
     {

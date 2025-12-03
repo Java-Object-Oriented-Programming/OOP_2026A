@@ -5,19 +5,17 @@ public class JuggedArray_08 {
 
         String[][] childrenMatrix = new String[2][];
 
-        childrenMatrix[0] = new String[] { "Naor", "Gil" };
-        childrenMatrix[1] = new String[] { "Bob", "Alice", "Tom" };
+        childrenMatrix[0] = new String[]{"Naor", "Gil"};
+        childrenMatrix[1] = new String[]{"Bob", "Alice", "Tom"};
 
         System.out.println(childrenMatrix.length);
         System.out.println(childrenMatrix[0].length);
 
-        String[][] childrenMatrix2={new String[] { "Naor", "Gil" },new String[] { "Bob", "Alice", "Tom" }};
-        for (String[] matrixItem : childrenMatrix)
-        {
+        String[][] childrenMatrix2 = {new String[]{"Naor", "Gil"}, new String[]{"Bob", "Alice", "Tom"}};
+        for (String[] matrixItem : childrenMatrix) {
             System.out.println("This parent has the following children");
-            for (String arrItem : matrixItem)
-            {
-                System.out.printf(arrItem+" ");
+            for (String arrItem : matrixItem) {
+                System.out.printf(arrItem + " ");
             }
 
             System.out.println();

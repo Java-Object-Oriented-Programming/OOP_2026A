@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 
 public class Conditions_09 {

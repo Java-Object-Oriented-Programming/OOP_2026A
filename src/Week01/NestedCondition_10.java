@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 public class NestedCondition_10 {
     public static void main(String[] args) {
@@ -19,6 +19,16 @@ public class NestedCondition_10 {
                 System.out.println("You can drink wine!!!");
             } else {
                 System.out.println("You can drink beer");
+            }
+        }
+
+        int number = 8792;
+        if(number>100){
+            if(number %2==0){
+
+                if(number%7==0){
+
+                }
             }
         }
     }

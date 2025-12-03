@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 public class ShortCondition_11 {
     public static void main(String[] args) {
@@ -13,16 +13,36 @@ public class ShortCondition_11 {
         System.out.println("res1: " + res1);
 
         String res2;
-        int num1=9;
+        int num1 = 9;
         res2 = (flag) ? "flag is true" : "flag is false";
 
         res2 = (flag) ?
-                (num1>9)?"flag is true"
-                        :"flag is true -9"
+                (num1 > 9) ? "flag is true"
+                        : "flag is true -9"
                 : "flag is false";
 
         System.out.println("res2: " + res2);
+        //  0  1  2  3  4  5  6  7  8
+        int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int count = 0;
 
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] % 2 == 0)
+                count++;
+        }
+        for (int i = 0; i < arr1.length; i++) {
+            count += (arr1[i] % 2 == 0) ? 1 : 0;
+        }
+        // -----------------------------------------------
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] % 2 == 0)
+                count++;
+            else
+                count--;
+        }
+        for (int i = 0; i < arr1.length; i++) {
+            count += (arr1[i] % 2 == 0) ? 1 : -1;
+        }
 
         //--------------Example-------------------
         //if (num > 9) so res is  ( num * 2 )
@@ -39,7 +59,7 @@ public class ShortCondition_11 {
 
 //            System.out.print(arr[i] + ((i < arr.length - 1) ? ", " : ""));
             System.out.print(arr[i]);
-            if(i < arr.length - 1)
+            if (i < arr.length - 1)
                 System.out.print(", ");
             else
                 System.out.print("");

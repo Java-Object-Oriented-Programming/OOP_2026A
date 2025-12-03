@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -7,11 +7,93 @@ public class Matrix_07 {
 
     public static void main(String[] args) {
         //----------- way 1 to craete a mtrix ---------
-        int[] arr01 = {1, 1, 1};
-        int[] arr022 = {2, 2, 2};
-        int[] arr033 = {3, 3, 3, 6};
+        int num = 1;
+        System.out.println(num); // 1
+
+        // ------------------------
+        int[] arr01 = new int[]{1, 2, 3};
+        System.out.println(arr01); // out -> [I@1b28cdfa
+
+        System.out.println(arr01[0]); // out -> 1
+        System.out.println(arr01[1]);// out -> 2
+        System.out.println(arr01[2]); // out -> 3
+        // ------------------------
+
+        // arr01[2] = first address( [I@1b28cdfa ) + 8byte
+
+        int[] arr022 = {4, 5, 6};
+        int[] arr033 = {7, 8, 9};
+
+        System.out.println("--------------- Print Arrays --------------");
+        System.out.println(num);
+        System.out.println("arr01");
+        System.out.println(arr01);
+        System.out.println("arr022");
+        System.out.println(arr022);
+        System.out.println("arr033");
+        System.out.println(arr033);
+        System.out.println("----------------------------------------");
 
         int[][] matrix1 = {arr01, arr022, arr033};
+
+
+
+        System.out.println("matrix1");
+        System.out.println(matrix1);
+
+        System.out.println("matrix1[0]");
+        System.out.println(matrix1[0]);
+        System.out.println("matrix1[1]");
+        System.out.println(matrix1[1]);
+        System.out.println("matrix1[2]");
+        System.out.println(matrix1[2]);
+
+        System.out.println("matrix1[0][0]");
+        System.out.println(matrix1[0][0]);
+        System.out.println("matrix1[1][0]");
+        System.out.println(matrix1[1][0]);
+        System.out.println("matrix1[2][0]");
+        System.out.println(matrix1[2][0]);
+
+        System.out.println("matrix1[0][1]");
+        System.out.println(matrix1[0][1]);
+        System.out.println("matrix1[1][2]");
+        System.out.println(matrix1[1][2]);
+        System.out.println("matrix1[2][1]");
+        System.out.println(matrix1[2][1]);
+
+        int[] a = matrix1[0];
+        System.out.println(a[2]);
+        a[2] = 99;
+        System.out.println(a[2]);
+        System.out.println(matrix1[0][2]);
+        System.out.println(arr01[2]);
+        System.out.println("-----------------------");
+        System.out.println(arr01[2]);
+        func(arr01);
+        System.out.println(arr01[2]);
+        System.out.println("-----------------------");
+        System.out.println(arr01[1]);
+
+        // num = 0
+
+        // arr1 = {1, 1, 1} // 12byte
+        // arr2 = {2, 2, 2} // 12byte
+        // arr3 = {3, 3, 3} // 12byte
+
+        // {1000x,3564x,5564f}
+        // {arr1,arr2,arr3}
+        // {{1, 1, 1},{2, 2, 2},{3, 3, 3}}
+        // matrix = {{1, 1, 1},{2, 2, 2},{3, 3, 3}}
+        // {{1, 1, 1},
+        // {2, 2, 2},
+        // {3, 3, 3}}
+        //int[] a =  matrix[0] = {1, 1, 1} ~ arr1 ~ 1000x
+        // a = matrix[0] = arr1
+
+
+        // matrix1[0] = arr01
+        // arr01[1] = matrix[0][1]
         System.out.println(matrix1[0]);
         System.out.println(matrix1[0][0]);
         System.out.println(arr01[0]);
@@ -107,5 +189,11 @@ public class Matrix_07 {
         System.out.println(Arrays.toString(array3));
 
         System.out.println("---------------------------------------");
+    }
+
+    public static void func(int[] b) {
+        b[2] = 654;
+        b[1] = 156454;
+
     }
 }

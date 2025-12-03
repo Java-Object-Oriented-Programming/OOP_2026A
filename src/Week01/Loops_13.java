@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 public class Loops_13 {
     public static void main(String[] args) {
@@ -23,6 +23,18 @@ public class Loops_13 {
         for (int forCounter = 0; forCounter < limit; forCounter++) {
             System.out.println(forCounter);
         }
+
+        for (int forCounter = 0, num = 9; (forCounter < limit || limit % 909 == 3); forCounter++, limit++) {
+            System.out.println(forCounter);
+        }
+//        while(true){
+//
+//        }
+//        for (;;) {
+//            System.out.println(forCounter);
+//        }
+
+
 
         System.out.println("-------------for------------------");
         int forCounter = 0;

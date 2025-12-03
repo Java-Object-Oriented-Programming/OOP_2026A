@@ -1,4 +1,4 @@
-package Day01;
+package Week01;
 
 public class SwitchCase_12 {
     public static void main(String[] args) {
@@ -8,7 +8,6 @@ public class SwitchCase_12 {
         // תוכן case אם יש בתוך ה
         //break חובה להוסיף בסופו
         switch (num) {
-
             case 1:
                 System.out.println("I am 1");
                 break;

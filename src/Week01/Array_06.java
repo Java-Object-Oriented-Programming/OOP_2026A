@@ -19,6 +19,8 @@ public class Array_06 {
         //מספר התאים יקבע לפי מספר הערכים שניתנו באיתחול
         int[] arr3 = new int[]{2, 4, 8};
 
+        // f 1111
+        // 100854ff
 
         System.out.println("---------------arr1------------------");
         for (int i = 0, size = arr1.length; i < size; i++) {
