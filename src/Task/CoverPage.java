@@ -1,6 +1,1 @@
-package Task;
-
-public class CoverPage {
-
-
-}
+package Task;public class CoverPage {}
